@@ -131,4 +131,12 @@ body {
     body {
         background-image: url('../images/pattern-background-desktop.svg');
     }
+
+    .card {
+        width: 400px;
+    }
+    
+    .first-box {
+        height: 200px;
+    }
 }
