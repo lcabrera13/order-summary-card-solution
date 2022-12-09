@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+    background-color: var(--pale-blue);
+    min-width: 320px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.first-box {
+    width: 100%;
+    height: 150px;
+    background-image: url('../images/illustration-hero.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.second-box {
+    padding: 20px;
+    text-align: center;
+}
+
+.second-box > h1 {
+    font-size: 2.4rem;
+    font-weight: 900;
+    color: var(--dark-blue);
+    margin-bottom: 20px;
+}
+
+.second-box > p {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--desaturated-blue);
+    margin-bottom: 20px;
+}
+
+.second-box > .plan-detail {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--very-pale-blue);
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.second-box > .plan-detail div:nth-child(2) {
+    flex-grow: 2;
+    text-align: left;
+    padding: 0px 20px;
+}
+
+.second-box > .plan-detail div:nth-child(2) p:nth-child(1) {
+    color: var(--dark-blue);
+    font-size: 1.4rem;
+    font-weight: 900;
+}
+
+.second-box > .plan-detail div:nth-child(2) p:nth-child(2) {
+    color: var(--desaturated-blue);
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.second-box > .plan-detail div:nth-child(3) a {
+    color: var(--bright-blue);
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.second-box .btn-primary {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--bright-blue);
+    color: var(--very-pale-blue);
+    border: none;
+    border-radius: 10px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.second-box .btn-secondary {
+    width: 100%;
+    padding: 15px;
+    background-color: white;
+    color: var(--desaturated-blue);
+    border: none;
+    border-radius: 10px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
