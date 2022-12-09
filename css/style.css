@@ -100,6 +100,11 @@ body {
     color: var(--bright-blue);
     font-size: 1.2rem;
     font-weight: 700;
+    cursor: pointer;
+}
+
+.second-box > .plan-detail div:nth-child(3) a:hover {
+    text-decoration: none;
 }
 
 .second-box .btn-primary {
@@ -113,6 +118,11 @@ body {
     font-size: 1.4rem;
     font-weight: 700;
     margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.second-box .btn-primary:hover {
+    background-color: #6593F5;
 }
 
 .second-box .btn-secondary {
@@ -125,6 +135,11 @@ body {
     font-family: 'Red Hat Display', sans-serif;
     font-size: 1.4rem;
     font-weight: 700;
+    cursor: pointer;
+}
+
+.second-box .btn-secondary:hover {
+    color: var(--dark-blue);
 }
 
 @media (min-width: 1000px) {
